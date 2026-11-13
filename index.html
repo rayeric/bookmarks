@@ -1,91 +1,102 @@
 <!DOCTYPE html>
 <html lang="zh-CN" data-theme="light">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>常用工具收藏夹</title>
-<meta name="description" content="个人常用在线工具书签集合：文件预览、字体工具、图标库、图片处理与公众号排版。">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>常用工具收藏夹</title>
+  <meta name="description" content="个人常用在线工具书签集合：文件预览、字体工具、图标库、图片处理与公众号排版。">\
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-<a class="skip-link" href="#sections">跳到工具列表</a>
+  <a class="skip-link" href="#sections">跳到工具列表</a>
 
-<header class="header">
-  <div class="topbar">
-    <div class="brand">
-      <span class="brand-mark" aria-hidden="true">
-        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M4 5a2 2 0 0 1 2-2h5l2 2h5a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/>
-        </svg>
-      </span>
-      <span class="brand-text">
-        <span class="brand-title">常用工具收藏夹</span>
-        <span class="brand-sub">toolbox · bookmarks</span>
-      </span>
-    </div>
-
-    <div class="search">
-      <span class="search-icon" aria-hidden="true">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>
-        </svg>
-      </span>
-      <input id="search" type="search" placeholder="搜索工具名称、用途或域名…" autocomplete="off" aria-label="搜索工具">
-      <span class="search-hint" aria-hidden="true">/</span>
-    </div>
-
-    <button class="icon-btn" id="themeBtn" type="button" aria-label="切换深色模式">
-      <span id="themeIcon"></span>
-    </button>
-  </div>
-</header>
-
-<div class="layout">
-  <aside class="sidebar">
-    <div class="side-card">
-      <span class="side-label">分类导航</span>
-      <nav class="cats" id="cats" aria-label="分类导航"></nav>
-    </div>
-    <div class="side-note">
-      <p>按 <kbd>/</kbd> 或 <kbd>Ctrl</kbd> + <kbd>K</kbd> 聚焦搜索，<kbd>Esc</kbd> 清空关键词。</p>
-    </div>
-  </aside>
-
-  <main id="sections">
-    <section class="hero" aria-labelledby="heroTitle">
-      <span class="hero-eyebrow">personal bookmarks</span>
-      <h1 id="heroTitle">常用工具，<span class="hero-accent">一处收纳</span></h1>
-      <p class="hero-desc">文件预览、字体与图标、图片处理、公众号排版 —— 日常在用的在线工具按分类整理，随时搜索，点击即可在新标签页打开。</p>
-      <div class="hero-stats">
-        <span class="stat is-accent"><strong id="statTools">0</strong> 个工具</span>
-        <span class="stat"><strong id="statCats">0</strong> 个分类</span>
-        <span class="stat">纯本地 · 无需登录</span>
+  <header class="header">
+    <div class="topbar">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 5a2 2 0 0 1 2-2h5l2 2h5a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z" />
+          </svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-title">常用工具收藏夹</span>
+          <span class="brand-sub">toolbox · bookmarks</span>
+        </span>
       </div>
-    </section>
 
-    <div class="meta-row">
-      <span class="result-text" id="resultText">共 0 个工具</span>
-      <span class="meta-hint">点击卡片在新标签页打开</span>
+      <div class="search">
+        <span class="search-icon" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="7" />
+            <path d="m20 20-3.5-3.5" />
+          </svg>
+        </span>
+        <input id="search" type="search" placeholder="搜索工具名称、用途或域名…" autocomplete="off" aria-label="搜索工具">
+        <span class="search-hint" aria-hidden="true">/</span>
+      </div>
+
+      <button class="icon-btn" id="themeBtn" type="button" aria-label="切换深色模式">
+        <span id="themeIcon"></span>
+      </button>
     </div>
+  </header>
 
-    <div class="empty" id="empty">
-      <span aria-hidden="true">
-        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>
-        </svg>
-      </span>
-      <span class="empty-title">没有匹配的工具</span>
-      <span>换个关键词试试，或按 Esc 清空搜索</span>
-    </div>
-  </main>
-</div>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="side-card">
+        <span class="side-label">分类导航</span>
+        <nav class="cats" id="cats" aria-label="分类导航"></nav>
+      </div>
+      <div class="side-note">
+        <p>按 <kbd>/</kbd> 或 <kbd>Ctrl</kbd> + <kbd>K</kbd> 聚焦搜索，<kbd>Esc</kbd> 清空关键词。</p>
+      </div>
+    </aside>
 
-<footer>本地收藏</footer>
+    <main id="sections">
+      <section class="hero" aria-labelledby="heroTitle">
+        <span class="hero-eyebrow">personal bookmarks</span>
+        <h1 id="heroTitle">常用工具，<span class="hero-accent">一处收纳</span></h1>
+        <p class="hero-desc">文件预览、字体与图标、图片处理、公众号排版 —— 日常在用的在线工具按分类整理，随时搜索，点击即可在新标签页打开。</p>
+        <div class="hero-stats">
+          <span class="stat is-accent"><strong id="statTools">0</strong> 个工具</span>
+          <span class="stat"><strong id="statCats">0</strong> 个分类</span>
+          <span class="stat">纯本地 · 无需登录</span>
+        </div>
+      </section>
 
-<script src="js/data.js"></script>
-<script src="js/app.js"></script>
+      <div class="meta-row">
+        <span class="result-text" id="resultText">共 0 个工具</span>
+        <span class="meta-hint">点击卡片在新标签页打开</span>
+      </div>
+
+      <div class="empty" id="empty">
+        <span aria-hidden="true">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="7" />
+            <path d="m20 20-3.5-3.5" />
+          </svg>
+        </span>
+        <span class="empty-title">没有匹配的工具</span>
+        <span>换个关键词试试，或按 Esc 清空搜索</span>
+      </div>
+    </main>
+  </div>
+
+  <footer>本地收藏</footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
 </body>
+
 </html>
